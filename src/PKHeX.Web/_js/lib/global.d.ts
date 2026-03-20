@@ -18,8 +18,10 @@ declare global {
         // ui
         getWidth: () => number;
         hasPreferenceForDarkTheme: () => boolean;
+        clickElement: (element: HTMLElement | null | undefined) => void;
         
         // firebase
+        isFirebaseAuthEnabled: () => boolean;
         isSignedIn: () => boolean;
         getAuthToken: () => Promise<IdToken>;
         signInAnonymously: () => Promise<IdToken>;
